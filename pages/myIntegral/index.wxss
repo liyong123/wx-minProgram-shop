@@ -1,0 +1,39 @@
+.container, page {
+  background: #fff;
+  font-size: 28rpx;
+  color: #333;
+}
+.title-grp{
+   display: flex;
+   height: 88rpx;
+   font-size: 30rpx;
+   padding: 0 100rpx;
+   align-items: center;
+   border-bottom:1rpx solid #e4e4e4
+}
+.title-grp text:first-child{
+  flex: 1;
+  text-align: left;
+}
+.title-grp text:last-child{
+  flex: 1;
+  text-align: right;
+}
+.integral-item{
+  display: flex;
+  align-items: center;
+  padding: 28rpx 100rpx 28rpx 40rpx;
+  border-bottom:solid 1rpx #eee;
+}
+.integral-name,.integral-num{
+  flex: 1;
+  display: flex;
+  align-items: center
+}
+.integral-name text:nth-child(2){
+   color: #444;
+   margin-left: 10rpx;
+}
+.integral-num{
+  justify-content: flex-end
+}

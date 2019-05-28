@@ -1,0 +1,18 @@
+<view class="container">
+   <view class='title-grp'>
+      <text>名称</text>
+      <text>数量</text>
+   </view>
+   <view class='integral-type'>
+      <view class='integral-item' wx:for="{{integralList}}" wx:key="integralList">
+         <view class='integral-name'>
+           <text class="iconfont icon-{{item.iconType}} f-30"></text>
+           <text>{{item.name}}</text>
+         </view>
+         <view class='integral-num'>
+           <text>{{item.number}}</text>
+         </view>
+      </view>
+   </view>
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/accountSet/index.wxml-->
+<view class="container">
+   <view class='integral-type'>
+      <form bindsubmit='formSubmit'>
+        <view class='integral-item'>
+          <view class='integral-name'>
+            <!-- <text class="iconfont icon-profile f-30"></text> -->
+            <text>更改密码</text>
+          </view>
+          <view class='integral-num' bindtap='modifyPassword'>
+             <text class="iconfont icon-xiangyoujiantou f-26 col-7"></text>
+          </view>
+        </view>
+      </form>
+   </view>
+
+</view>

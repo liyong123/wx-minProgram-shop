@@ -1,0 +1,37 @@
+<view class="container">
+   <view class='integral-type'>
+      <form bindsubmit='formSubmit'>
+        <view class='integral-item'>
+          <view class='integral-name'>
+            <!-- <text class="iconfont icon-profile f-30"></text> -->
+            <text>接收方用户名</text>
+          </view>
+          <view class='integral-num'>
+             <input name="userName" />
+          </view>
+        </view>
+        <view class='integral-item'>
+          <view class='integral-name'>
+            <!-- <text class="iconfont icon-cuxiao f-30"></text> -->
+            <text>积分数量</text>
+          </view>
+          <view class='integral-num'>
+             <input name="integralNum"  type='number'/>
+          </view>
+        </view>
+        <view class='integral-item'>
+          <view class='integral-name'>
+            <!-- <text class="iconfont icon-cuxiao f-30"></text> -->
+            <text>交易密码</text>
+          </view>
+          <view class='integral-num'>
+             <input name="password" password='true' />
+          </view>
+        </view>
+        <view class="btn-area">
+          <button type='primary' form-type="submit" hover-class='btn-active'>确认转出</button>
+        </view>
+      </form>
+   </view>
+
+</view>
