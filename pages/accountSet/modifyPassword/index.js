@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  toPasswordSet: function() {
+    wx.navigateTo({
+      url: '/pages/accountSet/modifyPassword/passwordModify/index'
+    })
   }
 })

@@ -20,10 +20,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-   
+  
   },
   // 表单提交
   formSubmit: function(e) {
-
+    const message = e.detail.value;
+    let _this = this;
+    App._post_form('user.score/rollout', message, function (result) {
+      App.showSuccess(result.msg);
+      
+    });
   }
 });

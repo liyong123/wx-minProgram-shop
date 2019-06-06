@@ -1,22 +1,22 @@
 <!--pages/accountSet/index.wxml-->
 <view class="container">
    <view class='integral-type'>
-     
-        <view class='integral-item'>
+
+        <!-- <view class='integral-item'>
           <view class='integral-name'>
-            <!-- <text class="iconfont icon-profile f-30"></text> -->
             <text>登录密码</text>
           </view>
           <view class='integral-num'>
              <text class="iconfont icon-xiangyoujiantou f-26 col-7"></text>
           </view>
-        </view>
+        </view> -->
+
         <view class='integral-item'>
           <view class='integral-name'>
             <!-- <text class="iconfont icon-profile f-30"></text> -->
             <text>交易密码</text>
           </view>
-          <view class='integral-num'>
+          <view class='integral-num' bindtap='toPasswordSet'>
              <text class="iconfont icon-xiangyoujiantou f-26 col-7"></text>
           </view>
         </view>

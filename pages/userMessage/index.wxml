@@ -2,38 +2,38 @@
 <!--pages/accountSet/index.wxml-->
 <view class="container">
    <view class='integral-type'>
-      <form bindsubmit='formSubmit'>
+      
         <view class='integral-item'>
           <view class='integral-name'>
             <!-- <text class="iconfont icon-profile f-30"></text> -->
             <text>手机号码</text>
           </view>
           <view class='integral-num'>
-             <text>13914713677</text>
+             <text>{{mobile}}</text>
           </view>
         </view>
-        <view class='integral-item'>
+        <!-- <view class='integral-item'>
           <view class='integral-name'>
-            <!-- <text class="iconfont icon-cuxiao f-30"></text> -->
+           
             <text>收货地址</text>
           </view>
           <view class='integral-num'>
             <text>江苏南京</text>
           </view>
-        </view>
+        </view> -->
         <view class='integral-item'>
           <view class='integral-name'>
             <!-- <text class="iconfont icon-cuxiao f-30"></text> -->
-            <text>收货人</text>
+            <text>用户名</text>
           </view>
           <view class='integral-num'>
-             <text>海藻</text>
+             <text>{{user_name}}</text>
           </view>
         </view>
         <view class="btn-area">
-          <button type='primary' form-type="submit" hover-class='btn-active'>修改个人资料</button>
+          <button type='primary' form-type="button" bindtap='toModify' hover-class='btn-active'>修改个人资料</button>
         </view>
-      </form>
+
    </view>
 
 </view>

@@ -1,0 +1,20 @@
+<view class='container treeGrp'>
+  <view wx:if="{{treeList.length<=0}}" class="yoshop-notcont">
+     <text class='iconfont icon-wushuju'></text>
+     <text class='cont'>亲，您还没有推荐人员，请继续努力！</text>
+  </view>
+
+  <view wx:if="{{treeList.length>0}}" class="tuanduiIcon">
+     <text class='iconfont icon-pintuan_huaban' style='color: rgb(30, 126, 228);font-size:44rpx'></text>
+  </view>
+
+  <view wx:for="{{treeList}}"  wx:key='treelist' wx:for-item="item" wx:for-index="idx">
+    <view wx:if="{{item.checked==true}}"  class='treeItem treeItemIcon' id='{{item.id}}' bindtap='selectNode' style='margin-right:20rpx;margin-left:{{40*(item.rank+1)}}rpx'>
+      {{item.children ? (item.checked && !item.open ? "+":"-" ) :'-'}}
+    </view>
+    <view wx:if="{{item.checked==true}}" class='treeItem' style='font-size:{{idx == 0 ? "30rpx" : ""}};color:{{idx == 0 ? "#000" : ""}}'
+      id='{{item.id}}' bindtap='selectNode'>
+      {{item.name}}
+    </view>
+  </view>
+</view>

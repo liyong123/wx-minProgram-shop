@@ -1,37 +1,40 @@
+<!--pages/userMessage/index.wxml-->
+<!--pages/accountSet/index.wxml-->
 <view class="container">
    <view class='integral-type'>
-      <form bindsubmit='formSubmit'>
+      <form bindsubmit='passwordSet'>
         <view class='integral-item'>
           <view class='integral-name'>
             <!-- <text class="iconfont icon-profile f-30"></text> -->
-            <text>接收方用户名</text>
-          </view>
-          <view class='integral-num'>
-             <input name="user_name" />
-          </view>
-        </view>
-        <view class='integral-item'>
-          <view class='integral-name'>
-            
-            <text>积分数量</text>
-          </view>
-          <view class='integral-num'>
-             <input name="score"  type='number'/>
-          </view>
-        </view>
-        <view class='integral-item'>
-          <view class='integral-name'>
-            
             <text>交易密码</text>
           </view>
           <view class='integral-num'>
-             <input name="pasdwd" password='true' />
+             <input name="pasdwd" password  />
+          </view>
+        </view>
+        <!-- <view class='integral-item'>
+          <view class='integral-name'>
+           
+            <text>收货地址</text>
+          </view>
+          <view class='integral-num'>
+            <text>江苏南京</text>
+          </view>
+        </view> -->
+        <view class='integral-item'>
+          <view class='integral-name'>
+            <!-- <text class="iconfont icon-cuxiao f-30"></text> -->
+            <text>确认交易密码</text>
+          </view>
+          <view class='integral-num'>
+              <input name="cpasdwd" password />
           </view>
         </view>
         <view class="btn-area">
-          <button type='primary' form-type="submit" hover-class='btn-active'>确认转出</button>
+          <button type='primary' form-type="submit" hover-class='btn-active'>提交</button>
         </view>
       </form>
    </view>
 
 </view>
+

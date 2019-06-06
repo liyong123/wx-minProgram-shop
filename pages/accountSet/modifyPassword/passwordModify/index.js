@@ -6,8 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    user_name:'',
-    mobile:''
+    pasdwd:'',
+    cpasdwd:''
   },
 
   /**
@@ -28,17 +28,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.getUserMessages()
+   
   },
-  // 获取个人资料
-  getUserMessages:function(){
-    let _this = this;
-    App._get('user/detail', {}, function (result) {
-      _this.setData({
-        user_name: result.data && result.data.userInfo ? result.data.userInfo.user_name : '暂无',
-        mobile: result.data && result.data.userInfo ? result.data.userInfo.mobile : '暂无'
-      });
-    });
+  // 交易密码设置
+  passwordSet: function (e) {
+    var message = e.detail.value;
+    // let _this = this;
+    App._post_form('user/setpaywd', message , function (result) {
+       App.showSuccess(result.msg);
+     });
   },
   /**
    * 生命周期函数--监听页面隐藏
@@ -73,10 +71,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  toModify:function(){
-    wx.navigateTo({
-      url: '/pages/userMessageModify/index'
-    })
   }
 })

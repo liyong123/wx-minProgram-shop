@@ -55,8 +55,13 @@
     "pages/myIntegral/index",
     "pages/outIntegral/index",
     "pages/userMessage/index",
+    "pages/userMessageModify/index",
     "pages/accountSet/index",
-    "pages/accountSet/modifyPassword/index"
+    "pages/accountSet/modifyPassword/index",
+    "pages/accountSet/modifyPassword/passwordModify/index",
+    "pages/recommendedList/index",
+    "pages/shopCenter/index"
+
   ],
   "window": {
     "navigationBarBackgroundColor": "#4169E1",

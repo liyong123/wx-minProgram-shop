@@ -1,0 +1,47 @@
+@import "/utils/common.wxss";
+.tree-left{
+  padding-left: 40rpx;
+}
+.treeGrp{
+  padding: 40rpx 10rpx
+}
+.treeItem{
+  font-size: 28rpx;
+  color: #444;
+  display: inline-block;
+}
+
+.treeItemIcon{
+  width: 30rpx;
+  height: 30rpx;
+  background: rgb(30, 126, 228);
+  line-height: 28rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  color: #fff; 
+}
+
+.yoshop-notcont {
+  padding:130rpx 100rpx;
+  box-sizing:border-box;
+}
+.yoshop-notcont .cont {
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.yoshop-notcont .iconfont {
+  font-size: 150rpx;
+  color: #ccc;
+  text-align: center;
+  display: block;
+  margin-bottom: 12rpx;
+}
+.tuanduiIcon{
+  position: fixed;
+  left: 30rpx;
+  top: 42rpx;
+}

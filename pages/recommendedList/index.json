@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "推荐列表",
+  "usingComponents": {
+    "treebar": "/components/treeList/treebar"
+  }
+}

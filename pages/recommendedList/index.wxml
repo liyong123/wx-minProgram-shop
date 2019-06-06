@@ -1,0 +1,5 @@
+<!--pages/recommendedList/index.wxml-->
+<view class="page">
+  <!--加载自定义组件-->
+    <treebar id="treebar">{{treebar}}</treebar> 
+</view>
